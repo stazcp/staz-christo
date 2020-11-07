@@ -19,7 +19,7 @@ export default function Header({ _style }) {
         Software Engineer · Web/App
       </Typography>
       <hr className="solid" />
-      <Typography variant="body1" className={classes.root} color="primary">
+      <Typography variant="body1" className={classes.root} color="secondary">
         <PhoneIcon /> 650 513 9578
         <EmailIcon /> staz.christo@gmail.com
         <Link href="https://github.com/stazcp" color="inherit">

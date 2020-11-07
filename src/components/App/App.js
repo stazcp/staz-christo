@@ -4,6 +4,8 @@ import CssBaseline from '@material-ui/core/CssBaseline'
 import Header from '../Header'
 import Projects from '../Projects'
 import Education from '../Education'
+import Experience from '../Experience'
+import OtherProjects from '../OtherProjects'
 import './App.css'
 
 let theme = createMuiTheme({
@@ -13,6 +15,9 @@ let theme = createMuiTheme({
     },
     primary: {
       main: '#ffffff',
+    },
+    secondary: {
+      main: 'rgba(218, 223, 224, 0.65)',
     },
   },
 })
@@ -27,6 +32,8 @@ function App() {
         <Header />
         <Projects />
         <Education />
+        <Experience />
+        <OtherProjects />
       </Container>
     </ThemeProvider>
   )

@@ -7,9 +7,10 @@ import {
   ListItem,
   ListItemIcon,
   ListItemText,
+  SvgIcon,
 } from '@material-ui/core'
 import { useStyles } from '../styles/useStyles'
-import ArrowForwardIosSharpIcon from '@material-ui/icons/ArrowForwardIosSharp'
+import LocationOnIcon from '@material-ui/icons/LocationOn'
 
 const mainStyle = {
   h5: {
@@ -25,36 +26,51 @@ export default function OutputHandler({ header, content }) {
   const classes = useStyles()
 
   const renderLinks = (links) => {
-    return links.map((link) => {
+    return links.map((link, i) => {
       return (
-        <Box>
-          {link.title} ( <Link href={link.url}>{link.url}</Link> )
+        <Box key={i}>
+          {link.title} ({' '}
+          <Link href={link.url} color="secondary">
+            {link.url}
+          </Link>{' '}
+          )
         </Box>
       )
     })
   }
 
+  const renderDescriptions = (descriptions) => {
+    return descriptions.map((descr, i) => {
+      return <li key={i}> {descr}</li>
+    })
+  }
+
   const renderContent = () => {
-    return content.map((ele) => {
-      const { title, links, description } = ele
+    return content.map((ele, i) => {
+      const { title, links, descriptions, location } = ele
       return (
-        <ListItem li>
-          <ListItemIcon>
-            <ArrowForwardIosSharpIcon color="primary" />
-          </ListItemIcon>
+        <ListItem li key={i}>
           <Box>
             <br />
             <Typography variant="h6" color="primary" style={mainStyle.h6}>
               {title}
             </Typography>
-            <Typography variant="body1" color="primary">
+            {location && (
+              <Typography color="secondary" variant="body1">
+                <SvgIcon fontSize="inherit">
+                  <LocationOnIcon />
+                </SvgIcon>{' '}
+                {location}
+              </Typography>
+            )}
+            <Typography variant="body1" color="secondary">
               <Box display="flex" justifyContent="flex-start" className={classes.root}>
-                {renderLinks(links)}
+                {links && renderLinks(links)}
               </Box>
             </Typography>
             <Typography variant="body1" color="primary">
               <Box display="flex" justifyContent="flex-start" className={classes.root}>
-                {description}
+                <ul>{renderDescriptions(descriptions)}</ul>
               </Box>
             </Typography>
           </Box>
