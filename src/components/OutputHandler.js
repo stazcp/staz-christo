@@ -49,26 +49,26 @@ export default function OutputHandler({ header, content }) {
     return content.map((ele, i) => {
       const { title, links, descriptions, location } = ele
       return (
-        <ListItem li key={i}>
+        <ListItem li="true" key={i}>
           <Box>
             <br />
-            <Typography variant="h6" color="primary" style={mainStyle.h6}>
+            <Typography variant="h6" color="primary" style={mainStyle.h6} component="div">
               {title}
             </Typography>
             {location && (
-              <Typography color="secondary" variant="body1">
+              <Typography color="secondary" variant="body1" component="div">
                 <SvgIcon fontSize="inherit">
                   <LocationOnIcon />
                 </SvgIcon>{' '}
                 {location}
               </Typography>
             )}
-            <Typography variant="body1" color="secondary">
+            <Typography variant="body1" color="secondary" component="div">
               <Box display="flex" justifyContent="flex-start" className={classes.root}>
                 {links && renderLinks(links)}
               </Box>
             </Typography>
-            <Typography variant="body1" color="primary">
+            <Typography variant="body1" color="primary" component="div">
               <Box display="flex" justifyContent="flex-start" className={classes.root}>
                 <ul>{renderDescriptions(descriptions)}</ul>
               </Box>
