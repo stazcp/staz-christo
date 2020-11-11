@@ -4,27 +4,25 @@ import OutputHandler from './OutputHandler'
 export default function Projects() {
   const content = [
     {
-      title: 'Netflix / Movie Database(IMDB) clone with React',
-      location: 'Remote - 2020',
-      links: [
-        { title: 'Github', url: 'https://github.com/stazcp/cine-plus' },
-        { title: 'Deployed', url: 'https://cine-plus.vercel.app/' },
-      ],
+      title: 'Web/App, The Movie Database - clone',
+      location: '2020',
+      links: [{ title: 'Visit ->', url: 'https://cine-plus.vercel.app/' }],
       descriptions: [
         'The Web/App was built using React.js with custom components and the use of libraries like Material-UI',
+        'User Authentication, as well as database interaction to store user data, are handled with Firebase.',
       ],
     },
     ,
     {
       title: 'Web Consultant',
-      location: 'Remote - 2019',
+      location: '2019',
       descriptions: [
         'Website Development in PHP, Javascript, SQL, and WordPress. Hosting and selling websites.',
       ],
     },
     {
       title: 'Artificial Intelligence: Implications for Business Strategy',
-      location: 'Remote - 2018',
+      location: '2018',
       links: [{ title: 'MIT SLOAN', url: 'https://rebrand.ly/mit-bc142' }],
       descriptions: [
         'Creating a “strategic roadmap” to determine what path a business should take using AI and Robotics for MIT assignment.',

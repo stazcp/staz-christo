@@ -5,7 +5,7 @@ export default function Experience() {
   const content = [
     {
       title: 'Uniscrap PBC, International Relations & Bussiness Development',
-      location: 'Remote Since 2016 to Present',
+      location: 'Since 2016',
       descriptions: [
         'A Public Benefit Corporation (PBC) whose main purpose is the improvement of the general quality of life among our society with the use of Technology, and Alternative and Sustainable Energy Solutions. Being able to work closely with the CEOs and founders we have achieved and continue to pursue partnerships with companies and people that share common goals with us.',
       ],

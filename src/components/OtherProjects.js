@@ -17,6 +17,15 @@ export default function OtherProjects() {
         'Understanding CHP installations and where they could be used. What fuel can be used and how could they be combined with other alternatives as solar and wind power.',
       ],
     },
+    {
+      title: 'Amazon Publishing, KDP',
+      links: [{ title: 'Wordpress Website', url: 'http://alexandrabooks.info/' }],
+      descriptions: [
+        'Publishing alternative poetry books on Amazon',
+        'Editing books in Photoshop, Acrobat, and Kindle Tools',
+        'Will rebuild with React.js',
+      ],
+    },
   ]
 
   return <OutputHandler header="Other Projects" content={content} />
