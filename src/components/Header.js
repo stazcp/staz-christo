@@ -28,7 +28,13 @@ export default function Header({ _style }) {
       </Typography>
       <hr className="solid" />
       <Typography variant="body1" color="secondary">
-        <Box display="flex" alignItems="center" justifyContent="center" className={classes.root}>
+        <Box
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+          className={classes.root}
+          flexWrap="wrap"
+        >
           <Box display="flex">
             <PhoneIcon /> Box650 513 9578
           </Box>
