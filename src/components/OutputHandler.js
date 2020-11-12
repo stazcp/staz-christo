@@ -9,7 +9,7 @@ import {
   ListItemText,
   SvgIcon,
 } from '@material-ui/core'
-import { useStyles } from '../styles/useStyles'
+import { useStyles } from '../styles/customStyles'
 import LocationOnIcon from '@material-ui/icons/LocationOn'
 
 const mainStyle = {

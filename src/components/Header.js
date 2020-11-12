@@ -1,10 +1,10 @@
 import ReactSvg from './reactSvg'
-import { Box, Typography, Link, Container } from '@material-ui/core'
+import { Box, Typography, Link, Container, IconButton } from '@material-ui/core'
 import PhoneIcon from '@material-ui/icons/Phone'
 import EmailIcon from '@material-ui/icons/Email'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
-import { useStyles } from '../styles/useStyles'
+import { useStyles } from '../styles/customStyles'
 import Image from 'material-ui-image'
 
 const styles = {
@@ -14,12 +14,18 @@ const styles = {
   },
 }
 
-export default function Header({ _style }) {
+export default function Header({ switchTheme }) {
   const classes = useStyles()
+
+  const handleTheme = () => {
+    switchTheme()
+  }
 
   return (
     <Box>
-      <ReactSvg />
+      <IconButton onClick={() => handleTheme()}>
+        <ReactSvg />
+      </IconButton>
       <Typography variant="h3" color="primary">
         Staz Christodoulakis
       </Typography>
