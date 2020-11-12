@@ -42,7 +42,7 @@ export default function Header({ switchTheme }) {
           flexWrap="wrap"
         >
           <Box display="flex">
-            <PhoneIcon /> Box650 513 9578
+            <PhoneIcon /> 650 409 6202
           </Box>
           <Box display="flex">
             <EmailIcon /> staz.christo@gmail.com
