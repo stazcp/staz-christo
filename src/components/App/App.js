@@ -7,9 +7,11 @@ import Projects from '../Projects'
 import Education from '../Education'
 import Experience from '../Experience'
 import OtherProjects from '../OtherProjects'
+import Hobbies from '../Hobbies'
 import './App.css'
 import { darkTheme } from '../../styles/customStyles'
 import { lightTheme } from '../../styles/customStyles'
+import Footer from '../Footer'
 
 function App() {
   const buildTheme = (theme) => {
@@ -34,7 +36,9 @@ function App() {
         <Education />
         <Experience />
         <OtherProjects />
+        <Hobbies />
       </Container>
+      <Footer />
     </ThemeProvider>
   )
 }
