@@ -31,7 +31,7 @@ export const lightTheme = {
       main: '#000000',
     },
     secondary: {
-      main: 'rgba(45, 45, 45, 0.65)',
+      main: 'rgba(46, 45, 45, 0.8)',
     },
   },
 }
