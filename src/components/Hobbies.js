@@ -15,8 +15,8 @@ export default function Education() {
     {
       title: 'Philosophy & Science',
       descriptions: [
-        'I have always had curiosity about understanding philosophical concepts',
-        'I enjoy to research scientific enigmas that have not been solved yet, who knows maybe I find something useful. 🤷',
+        'I have always had a curiosity about understanding philosophical concepts',
+        'I enjoy researching scientific enigmas that have not been solved yet, who knows maybe I find something useful. 🤷',
       ],
     },
   ]

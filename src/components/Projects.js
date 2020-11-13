@@ -32,7 +32,7 @@ export default function Projects() {
       title: 'College Thesis, Secure Chat Application',
       location: 'University of Hertfordshire, Greece, UK Affiliate - 2014',
       descriptions: [
-        'Java-based application with cipher public, private key encryption. The application will start a private server and a local client, each client is able to talk to one server. Over a network, the server has to be running in order for two people to communicate.',
+        'Java-based application with cipher public, private key encryption. The application will start a private server and a local client, each client can talk to one server. Over a network, the server has to be running for two people to communicate.',
       ],
     },
     {
