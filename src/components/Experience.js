@@ -36,8 +36,8 @@ export default function Experience() {
       location: 'Greece, Athens - 2011',
       descriptions: [
         'Computer and Network trainee / assistant',
-        'Responsible for maintenence of computers, installation of software & hardware',
-        'Learning about how servers work inside a large web based company',
+        'Responsible for maintenance of computers, installation of software & hardware',
+        'Learning about how servers work inside a large web-based company',
       ],
     },
   ]
