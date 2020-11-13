@@ -4,7 +4,7 @@ import OutputHandler from './OutputHandler'
 export default function Projects() {
   const content = [
     {
-      title: 'Web/App, The Movie Database - clone',
+      title: 'Web/App, The Movie Database (clone)',
       location: '2020',
       links: [{ title: 'Visit ->', url: 'https://cine-plus.vercel.app/' }],
       descriptions: [
