@@ -12,14 +12,6 @@ export default function Projects() {
         'User Authentication, as well as database interaction to store user data, are handled with Firebase.',
       ],
     },
-    ,
-    {
-      title: 'Web Consultant',
-      location: '2019',
-      descriptions: [
-        'Website Development in PHP, Javascript, SQL, and WordPress. Hosting and selling websites.',
-      ],
-    },
     {
       title: 'Artificial Intelligence: Implications for Business Strategy',
       location: '2018',

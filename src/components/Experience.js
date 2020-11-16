@@ -4,6 +4,13 @@ import OutputHandler from './OutputHandler'
 export default function Experience() {
   const content = [
     {
+      title: 'Web Consultant',
+      location: 'Since 2018',
+      descriptions: [
+        'Website Development in PHP, Javascript, SQL, and WordPress. Hosting and selling websites.',
+      ],
+    },
+    {
       title: 'Uniscrap PBC, International Relations & Business Development',
       location: 'Since 2016',
       descriptions: [
@@ -20,7 +27,7 @@ export default function Experience() {
       location: 'USA, CA - 2016 / 2017',
       descriptions: [
         'Energy Specialist, Sales & Marketing.',
-        'Specialization on Solar Energy and panels.',
+        'Specialization in Solar Energy and panels.',
       ],
     },
     {
