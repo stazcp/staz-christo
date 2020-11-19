@@ -48,7 +48,10 @@ export default function Header({ switchTheme }) {
             </Link>
           </Box>
           <Box display="flex">
-            <EmailIcon /> staz.christo@gmail.com
+            <EmailIcon />{' '}
+            <Link color="secondary" variant="a" href="mailto: staz.christo@gmail.com">
+              staz.christo@gmail.com
+            </Link>
           </Box>
           <Link href="https://github.com/stazcp" color="inherit" display="flex">
             <Box display="flex">
