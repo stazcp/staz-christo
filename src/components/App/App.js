@@ -36,7 +36,7 @@ function App() {
         <Education />
         <Experience />
         <OtherProjects />
-        <Hobbies />
+        {/* <Hobbies /> */}
       </Container>
       <Footer />
     </ThemeProvider>
