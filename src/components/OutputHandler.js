@@ -51,7 +51,6 @@ export default function OutputHandler({ header, content }) {
       return (
         <ListItem li="true" key={i}>
           <Box>
-            <br />
             <Typography variant="h6" color="primary" style={mainStyle.h6} component="div">
               {title}
             </Typography>
