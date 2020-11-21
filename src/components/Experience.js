@@ -4,7 +4,7 @@ import OutputHandler from './OutputHandler'
 export default function Experience() {
   const content = [
     {
-      title: 'Web Consultant',
+      title: 'Web Consultant, Co-Owner',
       location: 'Since 2018',
       descriptions: [
         'Website Development in PHP, Javascript, SQL, and WordPress. Hosting and selling websites.',
@@ -41,6 +41,7 @@ export default function Experience() {
     {
       title: 'Athenian - Macedonian News Agency, Internship',
       location: 'Greece, Athens - 2011',
+      links: [{ title: '', url: 'https://www.amna.gr/en' }],
       descriptions: [
         'Computer and Network trainee / assistant',
         'Responsible for maintenance of computers, installation of software & hardware',
