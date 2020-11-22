@@ -11,6 +11,7 @@ import {
 } from '@material-ui/core'
 import { useStyles } from '../styles/customStyles'
 import LocationOnIcon from '@material-ui/icons/LocationOn'
+import LinkIcon from '@material-ui/icons/Link'
 
 const mainStyle = {
   h5: {
@@ -25,20 +26,6 @@ const mainStyle = {
 export default function OutputHandler({ header, content }) {
   const classes = useStyles()
 
-  const renderLinks = (links) => {
-    return links.map((link, i) => {
-      return (
-        <Box key={i}>
-          {link.title} ({' '}
-          <Link href={link.url} color="secondary">
-            {link.url}
-          </Link>{' '}
-          )
-        </Box>
-      )
-    })
-  }
-
   const renderDescriptions = (descriptions) => {
     return descriptions.map((descr, i) => {
       return <li key={i}> {descr}</li>
@@ -47,26 +34,40 @@ export default function OutputHandler({ header, content }) {
 
   const renderContent = () => {
     return content.map((ele, i) => {
-      const { title, links, descriptions, location } = ele
+      const { title, link, descriptions, location, logo } = ele
       return (
         <ListItem li="true" key={i}>
           <Box>
-            <Typography variant="h6" color="primary" style={mainStyle.h6} component="div">
-              {title}
-            </Typography>
-            {location && (
-              <Typography color="secondary" variant="body1" component="div">
-                <SvgIcon fontSize="inherit">
-                  <LocationOnIcon />
-                </SvgIcon>{' '}
-                {location}
+            <Box display="flex" alignItems="center">
+              <Link href={link}>{logo}</Link>
+              <Typography variant="h5" color="primary" style={mainStyle.h6} component="div">
+                {title}
               </Typography>
-            )}
-            <Typography variant="body1" color="secondary" component="div">
-              <Box display="flex" justifyContent="flex-start" className={classes.root}>
-                {links && renderLinks(links)}
-              </Box>
-            </Typography>
+            </Box>
+            <Box display="flex" justifyContent="flex-start" className={classes.root}>
+              {location && (
+                <Box display="flex" justifyContent="flex-start">
+                  <Typography color="secondary" variant="body1" component="div">
+                    <SvgIcon fontSize="inherit">
+                      <LocationOnIcon />
+                    </SvgIcon>
+                    {location}
+                  </Typography>
+                </Box>
+              )}
+              {link && (
+                <Box display="flex" justifyContent="flex-start">
+                  <Typography variant="body1" color="secondary" component="div">
+                    <Link href={link} color="secondary">
+                      <SvgIcon fontSize="inherit" style={{ paddingTop: '5px' }}>
+                        <LinkIcon />
+                      </SvgIcon>
+                      {link.slice(8, link.length)}
+                    </Link>
+                  </Typography>
+                </Box>
+              )}
+            </Box>
             <Typography variant="body1" color="primary" component="div">
               <Box display="flex" justifyContent="flex-start" className={classes.root}>
                 <ul>{renderDescriptions(descriptions)}</ul>

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { ThemeProvider, createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles'
 import { Container } from '@material-ui/core'
 import CssBaseline from '@material-ui/core/CssBaseline'
@@ -6,8 +6,6 @@ import Header from '../Header'
 import Projects from '../Projects'
 import Education from '../Education'
 import Experience from '../Experience'
-import OtherProjects from '../OtherProjects'
-import Hobbies from '../Hobbies'
 import './App.css'
 import { darkTheme } from '../../styles/customStyles'
 import { lightTheme } from '../../styles/customStyles'
@@ -19,11 +17,16 @@ function App() {
     return responsiveFontSizes(createTheme)
   }
   const [theme, setTheme] = useState(buildTheme(darkTheme))
+  const [dark, setDark] = useState(true)
 
   const switchTheme = () => {
     if (theme.palette.background.default === '#282c34') {
       setTheme(buildTheme(lightTheme))
-    } else setTheme(buildTheme(darkTheme))
+      setDark(false)
+    } else {
+      setTheme(buildTheme(darkTheme))
+      setDark(true)
+    }
   }
 
   console.log(theme)
@@ -33,10 +36,8 @@ function App() {
         <CssBaseline />
         <Header switchTheme={switchTheme} />
         <Projects />
-        <Education />
+        <Education dark={dark} />
         <Experience />
-        <OtherProjects />
-        {/* <Hobbies /> */}
       </Container>
       <Footer />
     </ThemeProvider>

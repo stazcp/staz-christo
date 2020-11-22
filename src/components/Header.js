@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import ReactSvg from './reactSvg'
 import { Box, Typography, Link, Container, IconButton } from '@material-ui/core'
 import PhoneIcon from '@material-ui/icons/Phone'
 import EmailIcon from '@material-ui/icons/Email'
@@ -8,6 +7,8 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import { useStyles } from '../styles/customStyles'
 import Image from 'material-ui-image'
 import PopOver from './PopOver'
+import GetIcon from './GetIcon'
+import reactLogo from '../logos/reactLogo.svg'
 
 const styles = {
   image: {
@@ -35,7 +36,7 @@ export default function Header({ switchTheme }) {
           onClick={() => handleTheme()}
           // onMouseOver={(e) => handleHover(e)}
         >
-          <ReactSvg />
+          <GetIcon icon={reactLogo} className="reactLogo" />
         </IconButton>
         <Typography variant="h3" color="primary">
           Staz Christodoulakis
