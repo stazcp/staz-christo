@@ -10,7 +10,7 @@ export default function Experience() {
   const content = [
     {
       title: 'Web Consultant, Co-Owner',
-      location: 'Since 2018',
+      location: 'Remote (2018 - present)',
       descriptions: [
         'Website Development in PHP, Javascript, SQL, and WordPress. Hosting and selling websites.',
       ],
@@ -18,7 +18,7 @@ export default function Experience() {
     },
     {
       title: 'Uniscrap PBC, Tech Consultant/Business Development',
-      location: 'Since 2016',
+      location: 'Remote (2016 - present)',
       link: 'https://www.uniscrap.co/',
       descriptions: [
         'A Public Benefit Corporation (PBC) whose main purpose is the improvement of the general quality of life among our society with the use of Technology, and Alternative and Sustainable Energy Solutions. Being able to work closely with the CEOs and founders we have achieved and continue to pursue partnerships with companies and people that share common goals with us.',
@@ -29,7 +29,7 @@ export default function Experience() {
     },
     {
       title: 'Tesla',
-      location: 'USA, CA - 2016 / 2017',
+      location: 'USA, CA (2016 - 2017)',
       descriptions: [
         'Energy Specialist, Sales & Marketing.',
         'Specialization in Solar Energy and panels.',
@@ -38,7 +38,7 @@ export default function Experience() {
     },
     {
       title: 'Military, Special Forces - Paratrooper',
-      location: 'Greece - 2014 / 2015',
+      location: 'Greece (2014 - 2015)',
       descriptions: [
         'Military and sub-contractor collaboration on classified projects, radio communications expertise, and business management skills acquired through Paratrooper service in the Greek Special Forces.',
         'First of class Award on Radio Communications',

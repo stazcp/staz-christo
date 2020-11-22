@@ -24,14 +24,14 @@ export default function Projects() {
     // },
     {
       title: 'College Thesis, Secure Chat Application',
-      location: 'University of Hertfordshire, Greece, UK Affiliate - 2014',
+      location: 'University of Hertfordshire, Greece, UK Affiliate (2014)',
       descriptions: [
         'Java-based application with cipher public, private key encryption. The application will start a private server and a local client, each client can talk to one server. Over a network, the server has to be running for two people to communicate.',
       ],
     },
     {
       title: 'AI Simulation. Braitenberg Machines and Robots Under Control',
-      location: 'University of Hertfordshire, Greece, UK Affiliate - 2012',
+      location: 'University of Hertfordshire, Greece, UK Affiliate (2012)',
       descriptions: [
         'A Netlogo simulation based on Braitenberg’s vehicle simulation. Using the simplest vehicles with only the use of sensors and certain commands to produce a more complex and or even intellect behavior under a certain environment. In this experiment, there are simple tiny vehicles (agents) that will sense an energy source (like solar), when they sense the light they will move towards it and increase speed according to how bright it is or slow down as it gets darker.',
       ],

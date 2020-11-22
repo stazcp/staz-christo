@@ -21,7 +21,7 @@ export default function Education({ dark }) {
     // },
     {
       title: 'Bachelors in Computer Science, University of Hertfordshire',
-      location: 'Greece, UK Affiliate - 2011/2014',
+      location: 'Greece, UK Affiliate (2011 - 2014)',
       link: 'https://www.herts.ac.uk/',
       descriptions: [
         'Programming: Java, C, Assembly, Visual Basic, Python',
@@ -35,7 +35,7 @@ export default function Education({ dark }) {
     },
     {
       title: 'Aegean Omiros College, CS & Network Engineering',
-      location: 'GR Athens - 2010 / 2011',
+      location: 'GR Athens (2010 - 2011)',
       descriptions: [
         'Computer Science paired with Network Engineering Technical School',
         'Programming: Pascal, C++',
