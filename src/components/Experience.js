@@ -4,6 +4,7 @@ import GetIcon from './GetIcon'
 import teslaLogo from '../logos/teslaLogo.svg'
 import uniscrapLogo from '../logos/uniscrapLogo.svg'
 import stratos from '../logos/stratos.svg'
+import ecorp from '../logos/ecorp.svg'
 
 export default function Experience() {
   const content = [
@@ -13,6 +14,7 @@ export default function Experience() {
       descriptions: [
         'Website Development in PHP, Javascript, SQL, and WordPress. Hosting and selling websites.',
       ],
+      logo: <GetIcon icon={ecorp} width={52} />,
     },
     {
       title: 'Uniscrap PBC, Tech Consultant/Business Development',
