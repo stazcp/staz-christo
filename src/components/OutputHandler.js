@@ -39,7 +39,7 @@ export default function OutputHandler({ header, content }) {
         <ListItem li="true" key={i}>
           <Box>
             <Box display="flex" alignItems="center">
-              <Link href={link}>{logo}</Link>
+              <Link href={link && link}>{logo}</Link>
               <Typography variant="h5" color="primary" style={mainStyle.h6} component="div">
                 {title}
               </Typography>

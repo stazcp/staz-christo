@@ -29,7 +29,6 @@ function App() {
     }
   }
 
-  console.log(theme)
   return (
     <ThemeProvider theme={theme}>
       <Container maxWidth="lg" className="App">

@@ -38,8 +38,7 @@ export default function Education({ dark }) {
       location: 'GR Athens (2010 - 2011)',
       descriptions: [
         'Computer Science paired with Network Engineering Technical School',
-        'Programming: Pascal, C++',
-        'Graphic Design: Photoshop',
+        'Programming: Pascal, C++. Graphic Design: Photoshop',
       ],
       logo: <GetIcon icon={aegeanOmiros} width={52} />,
     },

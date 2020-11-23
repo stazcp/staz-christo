@@ -4,11 +4,29 @@ import PhoneIcon from '@material-ui/icons/Phone'
 import EmailIcon from '@material-ui/icons/Email'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
-import { useStyles } from '../styles/customStyles'
+import { makeStyles } from '@material-ui/core/styles'
 import Image from 'material-ui-image'
 import PopOver from './PopOver'
 import GetIcon from './GetIcon'
 import reactLogo from '../logos/reactLogo.svg'
+import clsx from 'clsx'
+
+export const useStyles = makeStyles((theme) => ({
+  header: {
+    '& > * + *': {
+      marginLeft: theme.spacing(2),
+    },
+    flexDirection: 'row',
+    [theme.breakpoints.down('xs')]: {
+      flexDirection: 'column',
+      '& > * + *': {
+        marginLeft: theme.spacing(0),
+      },
+      alignItems: 'flex-start',
+      paddingLeft: '8%',
+    },
+  },
+}))
 
 const styles = {
   image: {
@@ -52,28 +70,28 @@ export default function Header({ switchTheme }) {
           justifyContent="center"
           className={classes.root}
           flexWrap="wrap"
-          flexDirection="row"
+          className={classes.header}
         >
-          <Box display="flex" flexDirection="row" className={classes.root}>
+          <Box display="flex" flexDirection="row" className={classes.header} flexWrap="wrap">
             <Link color="secondary" variant="body1" href="tel: 650-409-6202">
-              <Box display="flex">
+              <Box display="flex" flexWrap="nowrap">
                 <PhoneIcon /> 650 409 6202
               </Box>
             </Link>
             <Link color="secondary" variant="body1" href="mailto: staz.christo@gmail.com">
-              <Box display="flex">
+              <Box display="flex" flexWrap="nowrap">
                 <EmailIcon /> staz.christo@gmail.com
               </Box>
             </Link>
           </Box>
-          <Box display="flex" flexDirection="row" className={classes.root}>
+          <Box display="flex" flexDirection="row" className={classes.header} flexWrap="wrap">
             <Link href="https://github.com/stazcp" color="secondary" variant="body1">
-              <Box display="flex">
+              <Box display="flex" flexWrap="nowrap">
                 <GitHubIcon /> github.com/stazcp
               </Box>
             </Link>
             <Link href="https://www.linkedin.com/in/staz-christo" color="secondary" variant="body1">
-              <Box display="flex">
+              <Box display="flex" flexWrap="nowrap">
                 <LinkedInIcon /> linkedin.com/in/staz-christo
               </Box>
             </Link>
