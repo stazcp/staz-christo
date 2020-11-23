@@ -5,7 +5,6 @@ import EmailIcon from '@material-ui/icons/Email'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import { makeStyles } from '@material-ui/core/styles'
-import Image from 'material-ui-image'
 import PopOver from './PopOver'
 import GetIcon from './GetIcon'
 import reactLogo from '../logos/reactLogo.svg'
@@ -27,13 +26,6 @@ export const useStyles = makeStyles((theme) => ({
     },
   },
 }))
-
-const styles = {
-  image: {
-    maxWidth: 200,
-    minWidth: 200,
-  },
-}
 
 export default function Header({ switchTheme }) {
   const classes = useStyles()

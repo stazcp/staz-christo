@@ -21,7 +21,7 @@ export default function Experience() {
       location: 'Remote (2016 - present)',
       link: 'https://www.uniscrap.co/',
       descriptions: [
-        'A Public Benefit Corporation (PBC) whose main purpose is the improvement of the general quality of life among our society with the use of Technology, and Alternative and Sustainable Energy Solutions. Being able to work closely with the CEOs and founders we have achieved and continue to pursue partnerships with companies and people that share common goals with us.',
+        'Environmental Public Benefit Corporation The Turn-key Environmental solution is characterized by High Innovation with American Technologies, and creates Social and Environmental Impact',
         'My position requires to understand different technologies and consult/assist the CEO in making key decisions',
         'Areas of expertise: Web Development, Renewable Energy Technologies, Zero Waste and Efficiency',
       ],
