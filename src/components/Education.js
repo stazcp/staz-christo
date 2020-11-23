@@ -36,6 +36,7 @@ export default function Education({ dark }) {
     {
       title: 'Aegean Omiros College, CS & Network Engineering',
       location: 'GR Athens (2010 - 2011)',
+      link: 'https://aegeancollege.gr/en/',
       descriptions: [
         'Computer Science paired with Network Engineering Technical School',
         'Programming: Pascal, C++. Graphic Design: Photoshop',
