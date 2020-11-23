@@ -52,27 +52,32 @@ export default function Header({ switchTheme }) {
           justifyContent="center"
           className={classes.root}
           flexWrap="wrap"
+          flexDirection="row"
         >
-          <Link color="secondary" variant="body1" href="tel: 650-409-6202">
-            <Box display="flex">
-              <PhoneIcon /> 650 409 6202
-            </Box>
-          </Link>
-          <Link color="secondary" variant="body1" href="mailto: staz.christo@gmail.com">
-            <Box display="flex">
-              <EmailIcon /> staz.christo@gmail.com
-            </Box>
-          </Link>
-          <Link href="https://github.com/stazcp" color="secondary" variant="body1">
-            <Box display="flex">
-              <GitHubIcon /> github.com/stazcp
-            </Box>
-          </Link>
-          <Link href="https://www.linkedin.com/in/staz-christo" color="secondary" variant="body1">
-            <Box display="flex">
-              <LinkedInIcon /> linkedin.com/in/staz-christo
-            </Box>
-          </Link>
+          <Box display="flex" flexDirection="row" className={classes.root}>
+            <Link color="secondary" variant="body1" href="tel: 650-409-6202">
+              <Box display="flex">
+                <PhoneIcon /> 650 409 6202
+              </Box>
+            </Link>
+            <Link color="secondary" variant="body1" href="mailto: staz.christo@gmail.com">
+              <Box display="flex">
+                <EmailIcon /> staz.christo@gmail.com
+              </Box>
+            </Link>
+          </Box>
+          <Box display="flex" flexDirection="row" className={classes.root}>
+            <Link href="https://github.com/stazcp" color="secondary" variant="body1">
+              <Box display="flex">
+                <GitHubIcon /> github.com/stazcp
+              </Box>
+            </Link>
+            <Link href="https://www.linkedin.com/in/staz-christo" color="secondary" variant="body1">
+              <Box display="flex">
+                <LinkedInIcon /> linkedin.com/in/staz-christo
+              </Box>
+            </Link>
+          </Box>
         </Box>
       </Box>
       <PopOver anchorEl={anchorEl} setAnchorEl={setAnchorEl} />
