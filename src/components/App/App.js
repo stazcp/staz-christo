@@ -20,7 +20,7 @@ function App() {
   const [dark, setDark] = useState(true)
 
   const switchTheme = () => {
-    if (theme.palette.background.default === '#282c34') {
+    if (theme.palette.background.default === '#282c34 !important') {
       setTheme(buildTheme(lightTheme))
       setDark(false)
     } else {

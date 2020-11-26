@@ -11,13 +11,13 @@ export const useStyles = makeStyles((theme) => ({
 export const darkTheme = {
   palette: {
     background: {
-      default: '#282c34',
+      default: '#282c34 !important',
     },
     primary: {
-      main: '#ffffff',
+      main: '#ffffff !important',
     },
     secondary: {
-      main: 'rgba(218, 223, 224, 0.65)',
+      main: 'rgba(218, 223, 224, 0.65) !important',
     },
   },
 }
@@ -25,13 +25,13 @@ export const darkTheme = {
 export const lightTheme = {
   palette: {
     background: {
-      default: '#ffffff',
+      default: '#ffffff !important',
     },
     primary: {
-      main: '#000000',
+      main: '#000000 !important',
     },
     secondary: {
-      main: 'rgba(46, 45, 45, 0.8)',
+      main: 'rgba(46, 45, 45, 0.8) !important',
     },
   },
 }
