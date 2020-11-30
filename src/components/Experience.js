@@ -9,15 +9,15 @@ import ecorp from '../logos/ecorp.svg'
 export default function Experience() {
   const content = [
     {
-      title: 'Web Consultant, Co-Owner',
+      title: 'Ecorp, Web Consultant/Software Engineer/Co-Owner',
       location: 'Remote (2018 - present)',
       descriptions: [
-        'Website Development in PHP, Javascript, SQL, and WordPress. Hosting and selling websites.',
+        'Website Development with WordPress, Javascript, CSS and React.js. Hosting and selling websites.',
       ],
       logo: <GetIcon icon={ecorp} width={52} />,
     },
     {
-      title: 'Uniscrap PBC, Tech Consultant/Business Development',
+      title: 'Uniscrap PBC, Tech Consultant/Software Engineer/Business Development',
       location: 'Remote (2016 - present)',
       link: 'https://www.uniscrap.co/',
       descriptions: [
@@ -28,12 +28,9 @@ export default function Experience() {
       logo: <GetIcon icon={uniscrapLogo} />,
     },
     {
-      title: 'Tesla',
+      title: 'Tesla, Energy Specialist',
       location: 'USA, CA (2016 - 2017)',
-      descriptions: [
-        'Energy Specialist, Sales & Marketing.',
-        'Specialization in Solar Energy and panels.',
-      ],
+      descriptions: ['Sales & Marketing.', 'Specialization in Solar Energy and panels.'],
       logo: <GetIcon icon={teslaLogo} />,
     },
     {

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Box, Typography, Link, Container, IconButton } from '@material-ui/core'
+import { Box, Typography, Link, Container, IconButton, Tooltip } from '@material-ui/core'
 import PhoneIcon from '@material-ui/icons/Phone'
 import EmailIcon from '@material-ui/icons/Email'
 import GitHubIcon from '@material-ui/icons/GitHub'
@@ -42,12 +42,14 @@ export default function Header({ switchTheme }) {
   return (
     <>
       <Box>
-        <IconButton
-          onClick={() => handleTheme()}
-          // onMouseOver={(e) => handleHover(e)}
-        >
-          <GetIcon icon={reactLogo} className="reactLogo" />
-        </IconButton>
+        <Tooltip title="Click Me!" placement="right" arrow>
+          <IconButton
+            onClick={() => handleTheme()}
+            // onMouseOver={(e) => handleHover(e)}
+          >
+            <GetIcon icon={reactLogo} className="reactLogo" />
+          </IconButton>
+        </Tooltip>
         <Typography variant="h3" color="primary">
           Staz Christodoulakis
         </Typography>
