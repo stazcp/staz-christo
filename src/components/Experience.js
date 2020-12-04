@@ -12,7 +12,7 @@ export default function Experience() {
       title: 'Ecorp, Web Consultant/Software Engineer/Co-Owner',
       location: 'Remote (2018 - present)',
       descriptions: [
-        'Website Development with WordPress, Javascript, CSS and React.js. Hosting and selling websites.',
+        'Website Development with WordPress, Javascript, CSS, and React.js. Hosting and selling websites.',
       ],
       logo: <GetIcon icon={ecorp} width={52} />,
     },
@@ -22,8 +22,8 @@ export default function Experience() {
       link: 'https://www.uniscrap.co/',
       descriptions: [
         'Environmental Public Benefit Corporation The Turn-key Environmental solution is characterized by High Innovation with American Technologies, and creates Social and Environmental Impact',
-        'My position requires to understand different technologies and consult/assist the CEO in making key decisions',
-        'Areas of expertise: Web Development, Renewable Energy Technologies, Zero Waste and Efficiency',
+        'My position requires understanding different technologies and consult/assist the CEO in making key decisions',
+        'Areas of expertise: Web Development, Renewable Energy Technologies, Zero Waste, and Efficiency',
       ],
       logo: <GetIcon icon={uniscrapLogo} />,
     },
