@@ -21,7 +21,7 @@ export default function Experience() {
       location: 'Remote (2016 - present)',
       link: 'https://www.uniscrap.co/',
       descriptions: [
-        'Environmental Public Benefit Corporation The Turn-key Environmental solution is characterized by High Innovation with American Technologies, and creates Social and Environmental Impact',
+        'Environmental Public Benefit Corporation The Turn-key Environmental solution is characterized by High Innovation with American Technologies and creates Social and Environmental Impact',
         'My position requires understanding different technologies and consult/assist the CEO in making key decisions',
         'Areas of expertise: Web Development, Renewable Energy Technologies, Zero Waste, and Efficiency',
       ],
