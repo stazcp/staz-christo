@@ -12,7 +12,7 @@ export default function Experience() {
       title: 'Ecorp, Web Consultant/Software Engineer/Co-Owner',
       location: 'Remote (2018 - present)',
       descriptions: [
-        'Website Development with WordPress, Javascript, CSS, and React.js. Hosting and selling websites.',
+        'Website Development with WordPress, Javascript, CSS, and React.js. Hosting and selling websites. SEO and Marketing assistance',
       ],
       logo: <GetIcon icon={ecorp} width={52} />,
     },
@@ -31,7 +31,7 @@ export default function Experience() {
     {
       title: 'Tesla, Energy Specialist',
       location: 'USA, CA (2016 - 2017)',
-      descriptions: ['Sales & Marketing.', 'Specialization in Solar Energy and panels.'],
+      descriptions: ['Sales & Marketing. Specialization in Solar Energy and panels.'],
       logo: <GetIcon icon={teslaLogo} />,
     },
     {
