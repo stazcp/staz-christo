@@ -24,6 +24,7 @@ export default function Experience() {
         'Environmental Public Benefit Corporation The Turn-key Environmental solution is characterized by High Innovation with American Technologies and creates Social and Environmental Impact',
         'My position requires understanding different technologies and consult/assist the CEO in making key decisions',
         'Areas of expertise: Web Development, Renewable Energy Technologies, Zero Waste, and Efficiency',
+        'Created an MIT project on Business Implications if the company was to use Artificial Intelligence.',
       ],
       logo: <GetIcon icon={uniscrapLogo} />,
     },
