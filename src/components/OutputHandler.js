@@ -12,6 +12,7 @@ import {
 import { useStyles } from '../styles/customStyles'
 import LocationOnIcon from '@material-ui/icons/LocationOn'
 import LinkIcon from '@material-ui/icons/Link'
+import useMediaQuery from '@material-ui/core/useMediaQuery'
 
 const mainStyle = {
   h5: {
@@ -25,6 +26,7 @@ const mainStyle = {
 
 export default function OutputHandler({ header, content }) {
   const classes = useStyles()
+  const mobile = useMediaQuery('(max-width:520px)')
 
   const renderDescriptions = (descriptions) => {
     return descriptions.map((descr, i) => {
@@ -39,12 +41,17 @@ export default function OutputHandler({ header, content }) {
         <ListItem li="true" key={i}>
           <Box>
             <Box display="flex" alignItems="center">
-              <Link href={link && link}>{logo}</Link>
+              {logo && <Link href={link}>{logo}</Link>}
               <Typography variant="h5" color="primary" style={mainStyle.h6} component="div">
                 {title}
               </Typography>
             </Box>
-            <Box display="flex" justifyContent="flex-start" className={classes.root}>
+            <Box
+              display="flex"
+              justifyContent="flex-start"
+              flexDirection={mobile ? 'column' : 'row'}
+              className={classes.root}
+            >
               {location && (
                 <Box display="flex" justifyContent="flex-start">
                   <Typography color="secondary" variant="body1" component="div">
