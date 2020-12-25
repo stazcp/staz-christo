@@ -17,7 +17,7 @@ export default function Experience() {
       logo: <GetIcon icon={ecorp} width={52} />,
     },
     {
-      title: 'Uniscrap PBC, Tech Consultant/Software Engineer/Business Development',
+      title: 'Uniscrap PBC, Tech Consultant/Business Development',
       location: 'Remote (2016 - present)',
       link: 'https://www.uniscrap.co/',
       descriptions: [
