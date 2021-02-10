@@ -1,17 +1,21 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import { Box, Typography } from '@material-ui/core'
 import OutputHandler from './OutputHandler'
 import GetIcon from './GetIcon'
 import uhLogoLight from '../logos/uhLogoLight.svg'
 import uhLogoDark from '../logos/uhLogoDark.svg'
 import aegeanOmiros from '../logos/aegeanOmiros.png'
+import { ThemeContext } from './ThemeContext'
 
-export default function Education({ dark }) {
+export default function Education() {
   const [logo, setLogo] = useState(uhLogoLight)
+  const { myTheme } = useContext(ThemeContext)
 
   useEffect(() => {
-    dark ? setLogo(uhLogoLight) : setLogo(uhLogoDark)
-  }, [dark])
+    switchLogo()
+  }, [myTheme])
+
+  const switchLogo = () => (myTheme.status === 'dark' ? setLogo(uhLogoLight) : setLogo(uhLogoDark))
 
   const content = [
     // {

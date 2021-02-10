@@ -8,30 +8,34 @@ export const useStyles = makeStyles((theme) => ({
   },
 }))
 
-export const darkTheme = {
-  palette: {
-    background: {
-      default: '#282c34 !important',
-    },
-    primary: {
-      main: '#ffffff !important',
-    },
-    secondary: {
-      main: 'rgba(218, 223, 224, 0.65) !important',
+export const themes = {
+  dark: {
+    status: 'dark',
+    palette: {
+      background: {
+        default: '#282c34',
+      },
+      primary: {
+        main: '#ffffff',
+      },
+      secondary: {
+        main: 'rgba(218, 223, 224, 0.65)',
+      },
     },
   },
-}
 
-export const lightTheme = {
-  palette: {
-    background: {
-      default: '#ffffff !important',
-    },
-    primary: {
-      main: '#000000 !important',
-    },
-    secondary: {
-      main: 'rgba(46, 45, 45, 0.8) !important',
+  light: {
+    status: 'light',
+    palette: {
+      background: {
+        default: '#ffffff',
+      },
+      primary: {
+        main: '#000000',
+      },
+      secondary: {
+        main: 'rgba(46, 45, 45, 0.8)',
+      },
     },
   },
 }
