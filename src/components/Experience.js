@@ -49,12 +49,12 @@ export default function Experience() {
       ],
       logo: <GetIcon icon={uniscrapLogo} />,
     },
-    {
-      title: 'Tesla, Energy Specialist',
-      location: 'USA, CA (2016 - 2017)',
-      descriptions: ['Sales & Marketing. Specialization in Solar Energy and panels.'],
-      logo: <GetIcon icon={teslaLogo} />,
-    },
+    // {
+    //   title: 'Tesla, Energy Specialist',
+    //   location: 'USA, CA (2016 - 2017)',
+    //   descriptions: ['Sales & Marketing. Specialization in Solar Energy and panels.'],
+    //   logo: <GetIcon icon={teslaLogo} />,
+    // },
     {
       title: 'Military, Special Forces - Paratrooper',
       location: 'Greece (2014 - 2015)',
