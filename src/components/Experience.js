@@ -1,3 +1,4 @@
+import React, { useContext, useEffect, useState } from 'react'
 import { Box, Typography } from '@material-ui/core'
 import OutputHandler from './OutputHandler'
 import GetIcon from './GetIcon'
@@ -5,12 +6,32 @@ import teslaLogo from '../logos/teslaLogo.svg'
 import uniscrapLogo from '../logos/uniscrapLogo.svg'
 import stratos from '../logos/stratos.svg'
 import ecorp from '../logos/ecorp.svg'
+import b_ai from '../logos/b_ai.svg'
+import b_ai2 from '../logos/b_ai2.svg'
+import { ThemeContext } from './ThemeContext'
 
 export default function Experience() {
+  const { myTheme } = useContext(ThemeContext)
+  const [dark, setDark] = useState(true)
+
+  useEffect(() => {
+    myTheme.status === 'dark' ? setDark(true) : setDark(false)
+    return () => {
+      setDark(true)
+    }
+  }, [myTheme])
+
   const content = [
     {
+      title: 'breathing.ai, Frontend Software Engineer',
+      location: 'Remote (2021 - present)',
+      link: 'https://breathing.ai/',
+      descriptions: ['Personalize Screen Experience with Biodata and AI'],
+      logo: <GetIcon icon={dark ? b_ai2 : b_ai} width={52} />,
+    },
+    {
       title: 'Ecorp, Web Consultant/Software Engineer/Co-Owner',
-      location: 'Remote (2018 - present)',
+      location: 'Remote (2018 - 2020)',
       descriptions: [
         'Website Development with WordPress, Javascript, CSS, and React.js. Hosting and selling websites. SEO and Marketing assistance',
       ],
