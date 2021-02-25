@@ -26,7 +26,10 @@ export default function Experience() {
       title: 'breathing.ai, Frontend Software Engineer',
       location: 'Remote (2021 - present)',
       link: 'https://breathing.ai/',
-      descriptions: ['Personalize Screen Experience with Biodata and AI'],
+      descriptions: [
+        'Developing a Chrome Extension to personalize Screen Experience with Biodata and AI.',
+        'Frontend: JavaScript, React.js, HTML/CSS. Backend: AWS, Flask, Cognito.',
+      ],
       logo: <GetIcon icon={dark ? b_ai2 : b_ai} width={52} />,
     },
     {
