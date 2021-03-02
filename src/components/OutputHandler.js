@@ -1,3 +1,7 @@
+// Output Handler, receives an List (Array) of items for each section.
+// It expects: header: string,
+// content: {title: string, link: string, descriptions: string, location: string, logo: GetIcon(svg/png)}
+
 import {
   Box,
   Container,
@@ -28,11 +32,45 @@ export default function OutputHandler({ header, content }) {
   const classes = useStyles()
   const mobile = useMediaQuery('(max-width:520px)')
 
+  //List of descriptions for each element.
   const renderDescriptions = (descriptions) => {
     return descriptions.map((descr, i) => {
       return <li key={i}> {descr}</li>
     })
   }
+
+  const renderTitle = (title) => (
+    <Box display="flex" alignItems="center">
+      {logo && <Link href={link}>{logo}</Link>}
+      <Typography variant="h5" color="primary" style={mainStyle.h6} component="div">
+        {title}
+      </Typography>
+    </Box>
+  )
+
+  const renderLinks = (link) => (
+    <Box display="flex" justifyContent="flex-start">
+      <Typography variant="body1" color="secondary" component="div">
+        <Link href={link} color="secondary">
+          <SvgIcon fontSize="inherit" style={{ paddingTop: '5px' }}>
+            <LinkIcon />
+          </SvgIcon>
+          {link.slice(8, link.length)}
+        </Link>
+      </Typography>
+    </Box>
+  )
+
+  const renderLocation = (location) => (
+    <Box display="flex" justifyContent="flex-start">
+      <Typography color="secondary" variant="body1" component="div">
+        <SvgIcon fontSize="inherit">
+          <LocationOnIcon />
+        </SvgIcon>
+        {location}
+      </Typography>
+    </Box>
+  )
 
   const renderContent = () => {
     return content.map((ele, i) => {
@@ -40,40 +78,15 @@ export default function OutputHandler({ header, content }) {
       return (
         <ListItem li="true" key={i}>
           <Box>
-            <Box display="flex" alignItems="center">
-              {logo && <Link href={link}>{logo}</Link>}
-              <Typography variant="h5" color="primary" style={mainStyle.h6} component="div">
-                {title}
-              </Typography>
-            </Box>
+            {renderTitle(title)}
             <Box
               display="flex"
               justifyContent="flex-start"
               flexDirection={mobile ? 'column' : 'row'}
               className={classes.root}
             >
-              {location && (
-                <Box display="flex" justifyContent="flex-start">
-                  <Typography color="secondary" variant="body1" component="div">
-                    <SvgIcon fontSize="inherit">
-                      <LocationOnIcon />
-                    </SvgIcon>
-                    {location}
-                  </Typography>
-                </Box>
-              )}
-              {link && (
-                <Box display="flex" justifyContent="flex-start">
-                  <Typography variant="body1" color="secondary" component="div">
-                    <Link href={link} color="secondary">
-                      <SvgIcon fontSize="inherit" style={{ paddingTop: '5px' }}>
-                        <LinkIcon />
-                      </SvgIcon>
-                      {link.slice(8, link.length)}
-                    </Link>
-                  </Typography>
-                </Box>
-              )}
+              {location && renderLocation(location)}
+              {link && renderLinks(link)}
             </Box>
             <Typography variant="body1" color="primary" component="div">
               <Box display="flex" justifyContent="flex-start" className={classes.root}>

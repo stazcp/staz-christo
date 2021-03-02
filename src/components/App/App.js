@@ -10,21 +10,24 @@ import Experience from '../Experience'
 import './App.css'
 import { ThemeContext } from '../ThemeContext'
 import Footer from '../Footer'
+import MyThemeProvider from '../ThemeContext'
 
 export default function App() {
   const { myTheme, switchTheme } = useContext(ThemeContext)
 
   return (
-    <ThemeProvider theme={myTheme}>
-      <ScopedCssBaseline>
-        <Container maxWidth="lg" className="App">
-          <Header switchTheme={switchTheme} />
-          <Projects />
-          <Education />
-          <Experience />
-        </Container>
-        <Footer />
-      </ScopedCssBaseline>
-    </ThemeProvider>
+    <MyThemeProvider>
+      <ThemeProvider theme={myTheme}>
+        <ScopedCssBaseline>
+          <Container maxWidth="lg" className="App">
+            <Header switchTheme={switchTheme} />
+            <Projects />
+            <Education />
+            <Experience />
+          </Container>
+          <Footer />
+        </ScopedCssBaseline>
+      </ThemeProvider>
+    </MyThemeProvider>
   )
 }

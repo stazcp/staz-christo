@@ -3,13 +3,12 @@ import ReactDOM from 'react-dom'
 import './index.css'
 import App from './components/App/App'
 import reportWebVitals from './reportWebVitals'
-import MyThemeProvider from './components/ThemeContext'
+import AltApp from './components/App/AltApp'
 
+//PDF instead of the react app
 ReactDOM.render(
   <React.StrictMode>
-    <MyThemeProvider>
-      <App />
-    </MyThemeProvider>
+    <AltApp />
   </React.StrictMode>,
   document.getElementById('root')
 )
